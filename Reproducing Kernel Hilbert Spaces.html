@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctorado en Estadística - UNI</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #520310;
+            --secondary-color: #ee940d;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --document-color: #27ae60;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        header {
+            position: relative;
+            padding: 30px 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
+            color: white;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .uni-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            opacity: 0.8;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        
+        h2 {
+            margin: 10px 0 0;
+            font-size: 1.5rem;
+            font-family: "Arial", sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        
+        .uni-main-logo {
+            display: block;
+            margin: 0 auto 30px;
+            width: 750px;
+            height: auto;
+        }
+        
+        .lecture-content {
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            border-left: 5px solid var(--document-color);
+            font-family: 'Times New Roman', serif;
+            line-height: 1.8;
+        }
+        
+        .lecture-content h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 35px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .theorem {
+            background-color: #f0f8ff;
+            border-left: 4px solid #4682b4;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .theorem-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #4682b4;
+        }
+        
+        .math {
+            font-family: 'Cambria Math', 'Latin Modern Math', serif;
+            margin: 15px 0;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .proof {
+            font-style: italic;
+            margin: 15px 0 15px 30px;
+        }
+        
+        .definition {
+            background-color: #fffaf0;
+            border-left: 4px solid var(--secondary-color);
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .def-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+        
+        .page-break {
+            border-top: 1px dashed #aaa;
+            margin: 40px 0;
+            text-align: center;
+            color: #777;
+            padding-top: 20px;
+        }
+        
+        .metadata {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0 25px;
+            color: #ddd;
+        }
+        
+        .course-title {
+            color: var(--primary-color);
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .documentos-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background-color: var(--document-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .documentos-link:hover {
+            background-color: #219653;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .uni-main-logo {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.uni.edu.pe/images/logo_uni.png" alt="" class="uni-logo">
+            <h1>Doctorado en Ciencias e Ingeniería Estadística</h1>
+            <h2>Antonio Lam García</h2>
+        </header>
+        
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyXMenkLZGsGeWDp-agKQACtNTPDIhOqLvefpd51lZ-ZH4wvilhNd1amtWj6z_sHGdbd33mQ42q7N7dPfWHHmURTuI9H_90E_06CdaTFlFKBgumTdfzTTnim0SzG-XlVH7a83zWg98DQW_jpTcxgianCjslPrdsMHqSHCNCPKhKEc0kD7HFnR1Qx7I50eK/s943/logo_y_uni.png" 
+             alt="Logo Universidad Nacional de Ingeniería" 
+             class="uni-main-logo">
+        
+
+        <div class="lecture-content">
+            <h2 class="course-title">CS281B/Stat241B (Primavera 2008) Teoría del Aprendizaje Estadístico</h2>
+            <h3>Clase: 7 - Espacios de Hilbert con Núcleo Reproducente</h3>
+            
+            <div class="metadata">
+                <p><em>Profesor: Peter Bartlett</em></p>
+                <p><em>Tomador de notas: Chunhui Gu</em></p>
+            </div>
+
+            <h3>1 Espacios de Hilbert con Núcleo Reproducente</h3>
+
+            <h4>Espacio de Hilbert y Núcleo</h4>
+
+            <p>Un producto interno ⟨u,v⟩ puede ser:</p>
+            <ol>
+                <li>Un producto punto usual: ⟨u,v⟩ = vᵀw = ∑ᵢ vᵢwᵢ</li>
+                <li>Un producto de núcleo: ⟨u,v⟩ = k(v,w) = ψ(v)ᵀψ(w) (donde ψ(u) puede tener dimensiones infinitas)</li>
+            </ol>
+
+            <p>Sin embargo, un producto interno ⟨·,·⟩ debe satisfacer:</p>
+            <ol>
+                <li>Simetría
+                    <div class="math">⟨u,v⟩ = ⟨v,u⟩ ∀ u,v ∈ 𝒳</div>
+                </li>
+                <li>Bilinealidad
+                    <div class="math">⟨αu + βv, w⟩ = α⟨u,w⟩ + β⟨v,w⟩ ∀ u,v,w ∈ 𝒳, ∀ α,β ∈ ℝ</div>
+                </li>
+                <li>Definición positiva
+                    <div class="math">⟨u,u⟩ ≥ 0, ∀ u ∈ 𝒳</div>
+                    <div class="math">⟨u,u⟩ = 0 ⇔ u = 0</div>
+                </li>
+            </ol>
+
+            <div class="definition">
+                <span class="def-title">Definición.</span> Un <em>Espacio de Hilbert</em> es un espacio de producto interno completo y separable respecto a la norma definida por el producto interno.
+            </div>
+
+            <p>Ejemplos:</p>
+            <ol>
+                <li>ℝⁿ con ⟨a,b⟩ = aᵀb</li>
+                <li>Espacio l₂ de sucesiones sumables cuadráticas: ⟨x,y⟩ = ∑ᵢ₌₁ᵒᵒ xᵢyᵢ</li>
+                <li>Espacio L₂ de funciones integrables cuadráticas: ⟨f,g⟩ = ∫ₛ f(x)g(x)dx</li>
+            </ol>
+
+            <div class="definition">
+                <span class="def-title">Definición.</span> k(·,·) es un <em>núcleo reproductor</em> de un espacio de Hilbert ℋ si ∀f ∈ ℋ, f(x) = ⟨k(x,·), f(·)⟩.
+            </div>
+
+            <div class="page-break">===== Página 2 =====</div>
+
+            <p>Un Espacio de Hilbert con Núcleo Reproducente (RKHS) es un espacio de Hilbert H con un núcleo reproductor cuyo recorrido es denso en H. Podríamos definir equivalentemente un RKHS como un espacio de Hilbert de funciones con todos los funcionales de evaluación acotados y lineales.</p>
+
+            <p>Por ejemplo, el espacio L₂ es un espacio de Hilbert, pero no un RKHS porque la función delta que tiene la propiedad reproductora</p>
+            <div class="math">f(x) = ∫ₛ δ(x-u)f(u)du</div>
+            <p>no satisface la condición de integrabilidad cuadrática, es decir,</p>
+            <div class="math">∫ₛ δ(u)²du ≮ ∞</div>
+            <p>por lo tanto la función delta no está en L₂.</p>
+
+            <div class="definition">
+                <span class="def-title">Definición.</span> k: 𝒳 × 𝒳 → ℝ es un <em>núcleo</em> si:
+                <ol>
+                    <li>k es simétrico: k(x,y) = k(y,x)</li>
+                    <li>k es semidefinido positivo: ∀x₁,...,xₙ ∈ 𝒳, la matriz de Gram Kᵢⱼ = k(xᵢ,xⱼ) es semidefinida positiva</li>
+                </ol>
+            </div>
+
+            <p>Propiedades:</p>
+            <ol>
+                <li>k(x,x) ≥ 0 (Considere la matriz de Gram para n=1)</li>
+                <li>k(u,v) ≤ √[k(u,u)k(v,v)] (Esta es la desigualdad de Cauchy-Schwarz)</li>
+            </ol>
+
+            <p>Para ver por qué se cumple la segunda propiedad, consideramos el caso cuando n=2:</p>
+            <div class="math">Sea a = [k(v,v); -k(u,v)]</div>
+            <div class="math">K = [k(u,u) k(u,v); k(v,u) k(v,v)] ≽ 0 ⇔ aᵀKa ≥ 0</div>
+            <div class="math">⇔ [k(v,v)k(u,u) - k(u,v)²]k(v,v) ≥ 0</div>
+            <p>Por la primera propiedad sabemos k(v,v) ≥ 0, así que k(v,v)k(u,u) ≥ k(u,v)².</p>
+
+            <h4>Construir un Espacio de Hilbert con Núcleo Reproducente (RKHS)</h4>
+
+            <p>Dado un núcleo k, defina el "mapeo de características del núcleo reproductor" Φ: 𝒳 → ℝ^𝒳 como:</p>
+            <div class="math">Φ(x) = k(·,x)</div>
+
+            <p>Considere el espacio vectorial:</p>
+            <div class="math">span{Φ(x): x ∈ 𝒳} = {f(·) = ∑ᵢ₌₁ⁿ αᵢk(·,xᵢ) : n ∈ ℕ, xᵢ ∈ 𝒳, αᵢ ∈ ℝ}</div>
+
+            <p>Para f = ∑ᵢ αᵢk(·,uᵢ) y g = ∑ᵢ βᵢk(·,vᵢ), defina ⟨f,g⟩ = ∑ᵢⱼ αᵢβⱼk(uᵢ,vⱼ).</p>
+
+            <p>Note que:</p>
+            <div class="math">⟨f, k(·,x)⟩ = ∑ᵢ αᵢk(x,uᵢ) = f(x)</div>
+
+            <div class="page-break">===== Página 3 =====</div>
+
+            <p>Mostramos que ⟨f,g⟩ es un producto interno verificando:</p>
+            <ol>
+                <li>Simetría: ⟨f,g⟩ = ∑ᵢⱼ αᵢβⱼk(uᵢ,vⱼ) = ∑ᵢⱼ βⱼαᵢk(vⱼ,uᵢ) = ⟨g,f⟩</li>
+                <li>Bilinealidad: ⟨f,g⟩ = ∑ᵢ αᵢg(uᵢ) = ∑ⱼ βⱼf(vⱼ)</li>
+                <li>Definición positiva: ⟨f,f⟩ = αᵀKα ≥ 0 con igualdad si y solo si f = 0</li>
+            </ol>
+
+            <p>Del punto 3 también podemos derivar:</p>
+            <ol>
+                <li>⟨f,g⟩² ≤ ⟨f,f⟩⟨g,g⟩ 
+                    <div class="proof">Prueba: ∀a ∈ ℝ, ⟨af + g, af + g⟩ = a²⟨f,f⟩ + 2a⟨f,g⟩ + ⟨g,g⟩ ≥ 0. Esto implica que la expresión cuadrática tiene un discriminante no positivo. Por lo tanto, ⟨f,g⟩² - ⟨f,f⟩⟨g,g⟩ ≤ 0</div>
+                </li>
+                <li>|f(x)|² = ⟨k(·,x),f⟩² ≤ k(x,x)⟨f,f⟩, lo que implica que si ⟨f,f⟩ = 0 entonces f es idénticamente cero</li>
+            </ol>
+
+            <div class="definition">
+                <span class="def-title">Definición.</span> Para un (compacto) 𝒳 ⊆ ℝᵈ, y un espacio de Hilbert ℋ de funciones f: 𝒳 → ℝ, decimos que ℋ es un <em>Espacio de Hilbert con Núcleo Reproducente</em> si ∃k: 𝒳 → ℝ, tal que:
+                <ol>
+                    <li>k tiene la propiedad reproductora: f(x) = ⟨f(·), k(·,x)⟩</li>
+                    <li>k genera ℋ = span{k(·,x): x ∈ 𝒳}</li>
+                </ol>
+            </div>
+
+            <h4>Teorema de Mercer</h4>
+
+            <div class="theorem">
+                <span class="theorem-title">Teorema 1.1 (Mercer).</span> Suponga que k es un núcleo continuo semidefinido positivo en un conjunto compacto 𝒳, y el operador integral Tₖ: L₂(𝒳) → L₂(𝒳) definido por
+                <div class="math">(Tₖf)(·) = ∫𝒳 k(·,x)f(x)dx</div>
+                es semidefinido positivo, es decir, ∀f ∈ L₂(𝒳),
+                <div class="math">∫𝒳 k(u,v)f(u)f(v)dudv ≥ 0</div>
+                Entonces existe una base ortonormal {ψᵢ} de L₂(𝒳) que consiste en autofunciones de Tₖ tal que la secuencia correspondiente de autovalores {λᵢ} son no negativos. Las autofunciones correspondientes a autovalores no nulos son continuas en 𝒳 y k(u,v) tiene la representación
+                <div class="math">k(u,v) = ∑ᵢ₌₁ᵒᵒ λᵢ ψᵢ(u)ψᵢ(v)</div>
+                donde la convergencia es absoluta y uniforme, es decir,
+                <div class="math">límₙ→∞ supᵤ,ᵥ |k(u,v) - ∑ᵢ₌₁ⁿ λᵢ ψᵢ(u)ψᵢ(v)| = 0</div>
+            </div>
+
+            <div class="page-break">===== Página 4 =====</div>
+
+            <p>Para tomar una analogía en el caso finito, es decir, 𝒳 = {x₁,...,xₙ}. Sea Kᵢⱼ = k(xᵢ,xⱼ), y f: 𝒳 → ℝⁿ con fᵢ = f(xᵢ). Entonces,</p>
+            <div class="math">Tₖf = ∑ᵢ₌₁ⁿ k(·,xᵢ)fᵢ</div>
+            <div class="math">∀f, fᵀKf ≥ 0 ⇒ K ≽ 0 ⇒ K = ∑ₖ λₖ vₖ vₖᵀ</div>
+            <p>Por lo tanto,</p>
+            <div class="math">k(xᵢ,xⱼ) = Kᵢⱼ = (VΛVᵀ)ᵢⱼ = ∑ₖ λₖ vₖᵢ vₖⱼ = ∑ₖ λₖ ψₖ(xᵢ)ψₖ(xⱼ) ⇒ ψₖ(xᵢ) = (vₖ)ᵢ</div>
+
+            <p>Resumimos varias condiciones equivalentes sobre k simétrico continuo definido en 𝒳 compacto:</p>
+            <ol>
+                <li>Toda matriz de Gram es semidefinida positiva</li>
+                <li>Tₖ es semidefinido positivo</li>
+                <li>k puede expresarse como k(u,v) = ∑ᵢ λᵢ ψᵢ(u)ψᵢ(v)</li>
+                <li>k es el núcleo reproductor de un RKHS de funciones en 𝒳</li>
+            </ol>
+        </div>
+        
+        
+        
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 0.9rem;">
+            <p>Universidad Nacional de Ingeniería - Doctorado en Ciencias e Ingeniería Estadística</p>
+            <p>© 2023 Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
