@@ -18,14 +18,14 @@ Universidad Nacional de Ingeniería
 
 ## CS281B/Stat241B (Primavera 2008) — Teoría del Aprendizaje Estadístico
 
-### Clase 7: Espacios de Hilbert con Núcleo Reproducente
+### Clase 7: Espacios de Hilbert con Núcleo Reproductor
 
 > **Profesor:** Peter Bartlett  
 > **Tomador de notas:** Chunhui Gu
 
 ---
 
-## 1. Espacios de Hilbert con Núcleo Reproducente
+## 1. Espacios de Hilbert con Núcleo Reproductor
 
 ### Espacio de Hilbert y Núcleo
 
@@ -186,7 +186,7 @@ Para $k$ simétrico continuo en $\mathcal{X}$ compacto, las siguientes condicion
 
 <div align="center">
 
-*Universidad Nacional de Ingeniería — Doctorado en Ciencias e Ingeniería Estadística*  
+*Antono Lam García - Universidad Nacional de Ingeniería — Doctorado en Ciencias e Ingeniería Estadística*  
 © 2023 Todos los derechos reservados
 
 </div>
