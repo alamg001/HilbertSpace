@@ -107,7 +107,23 @@ $$\Phi(x) = k(\cdot, x)$$
 
 El espacio vectorial considerado es:
 
-$$\text{span}\{\Phi(x) : x \in \mathcal{X}\} = \left\{ f(\cdot) = \sum_{i=1}^n \alpha_i\, k(\cdot, x_i) : n \in \mathbb{N},\; x_i \in \mathcal{X},\; \alpha_i \in \mathbb{R} \right\}$$
+
+$$
+\mathrm{span}\{\Phi(x) : x \in \mathcal{X}\} = \{ 
+f(\cdot) = \sum_{i=1}^n \alpha_i k(\cdot, x_i) 
+: n \in \mathbb{N},\ x_i \in \mathcal{X},\ \alpha_i \in \mathbb{R} 
+\}
+$$
+
+
+
+
+
+
+
+
+
+
 
 Para $f = \sum_i \alpha_i k(\cdot, u_i)$ y $g = \sum_j \beta_j k(\cdot, v_j)$, se define:
 
